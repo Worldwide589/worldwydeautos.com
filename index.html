@@ -8,14 +8,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#222;line-height:1.6}
-header{position:absolute;top:0;left:0;width:100%;z-index:10;background:rgba(0,0,0,.78);color:#fff;padding:10px 5%;display:flex;justify-content:flex-end;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.35)}
+header{position:absolute;top:0;left:0;width:100%;z-index:10;background:rgba(0,0,0,.72);color:#fff;padding:12px 5%;display:flex;justify-content:flex-end;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.35)}
 nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex-end}
 nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:15px}
 nav a:hover{color:#d71920}
-.hero{min-height:100vh;background:#000 url("ChatGPT Image Sep 9, 2026, 07_31_53 AM.png") center center/contain no-repeat;display:flex;align-items:flex-end;justify-content:center;text-align:center;color:#fff;padding:0 20px 42px;position:relative}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.12) 0%,transparent 55%,rgba(0,0,0,.72) 100%);pointer-events:none}
-.hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
-.hero-content p{font-size:18px;max-width:700px;margin-bottom:12px;text-shadow:0 2px 5px #000}
+.hero{background:#000;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;color:#fff;padding:0;position:relative}
+.hero-logo{width:100%;height:auto;max-height:calc(100vh - 95px);object-fit:contain;object-position:center top;display:block;margin-top:0}
+.hero-content{width:100%;padding:18px 20px 35px;background:#000;position:relative;z-index:2}
+.hero-content p{font-size:20px;margin-bottom:10px;font-weight:500}
 .button{display:inline-block;background:#d71920;color:#fff;text-decoration:none;padding:14px 28px;border-radius:5px;font-weight:bold;margin:6px;box-shadow:0 4px 10px rgba(0,0,0,.4)}
 .button.dark{background:#fff;color:#111}
 section:not(.hero){padding:65px 7%}.section-title{text-align:center;font-size:36px;margin-bottom:40px}
@@ -27,7 +27,7 @@ section:not(.hero){padding:65px 7%}.section-title{text-align:center;font-size:36
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:40px}.feature{text-align:center;padding:25px}.feature h3{margin:12px 0 8px;font-size:21px}.feature-icon{font-size:42px}
 .contact{background:#111;color:#fff;text-align:center}.contact h2{font-size:38px;margin-bottom:20px}.contact p{font-size:19px;margin:8px 0}.contact a{color:#fff;text-decoration:none}
 footer{background:#080808;color:#aaa;text-align:center;padding:25px;font-size:14px}
-@media(max-width:700px){header{padding:9px 4%;justify-content:center}nav{gap:13px}nav a{font-size:13px}.hero{min-height:100svh;padding-bottom:25px;background-size:contain}.hero-content p{font-size:15px}.button{padding:12px 20px}}
+@media(max-width:700px){header{padding:9px 4%;justify-content:center;background:rgba(0,0,0,.78)}nav{gap:13px}nav a{font-size:13px}.hero-logo{width:100%;max-height:none;margin-top:0}.hero-content{padding:14px 12px 28px}.hero-content p{font-size:16px}.button{padding:12px 20px}.section-title{font-size:30px}}
 </style>
 </head>
 <body>
@@ -36,6 +36,7 @@ footer{background:#080808;color:#aaa;text-align:center;padding:25px;font-size:14
 </header>
 
 <section class="hero">
+<img class="hero-logo" src="ChatGPT Image Sep 9, 2026, 07_31_53 AM.png" alt="World Auto Sales logo">
 <div class="hero-content">
 <p>Quality Vehicles. Honest Service. &nbsp; • &nbsp; Call 618-575-0204</p>
 <div>
