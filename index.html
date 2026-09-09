@@ -13,8 +13,9 @@ nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:flex
 nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:15px}
 nav a:hover{color:#d71920}
 .hero{background:#000;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;color:#fff;padding:58px 0 24px;overflow:hidden}
-.hero-logo{display:block;width:100%;max-width:1400px;height:auto;max-height:calc(100vh - 145px);object-fit:contain;margin:0 auto;filter:drop-shadow(0 8px 18px rgba(0,0,0,.75))}
-.hero-content{display:flex;flex-direction:column;align-items:center;margin-top:-8px;position:relative;z-index:2}
+.hero-logo-wrap{width:100%;max-width:1400px;aspect-ratio:1222/1140;overflow:hidden;margin:0 auto}
+.hero-logo{display:block;width:100%;height:auto;margin:0;filter:drop-shadow(0 8px 18px rgba(0,0,0,.75))}
+.hero-content{display:flex;flex-direction:column;align-items:center;margin-top:0;position:relative;z-index:2}
 .hero-content p{font-size:20px;font-weight:bold;line-height:1.15;margin:0;text-shadow:0 2px 5px #000}
 .hero-content p.phone{font-size:27px;margin-top:1px}
 .button{display:inline-block;background:#d71920;color:#fff;text-decoration:none;padding:12px 27px;border-radius:5px;font-weight:bold;margin:4px;box-shadow:0 4px 10px rgba(0,0,0,.4)}
@@ -28,7 +29,7 @@ section:not(.hero){padding:65px 7%}.section-title{text-align:center;font-size:36
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:40px}.feature{text-align:center;padding:25px}.feature h3{margin:12px 0 8px;font-size:21px}.feature-icon{font-size:42px}
 .contact{background:#111;color:#fff;text-align:center}.contact h2{font-size:38px;margin-bottom:20px}.contact p{font-size:19px;margin:8px 0}.contact a{color:#fff;text-decoration:none}
 footer{background:#080808;color:#aaa;text-align:center;padding:25px;font-size:14px}
-@media(max-width:700px){header{padding:9px 4%;justify-content:center}nav{gap:13px}nav a{font-size:13px}.hero{min-height:auto;padding:58px 0 22px}.hero-logo{width:100%;max-height:none}.hero-content{margin-top:-4px}.hero-content p{font-size:16px}.hero-content p.phone{font-size:23px}.button{padding:11px 19px}}
+@media(max-width:700px){header{padding:9px 4%;justify-content:center}nav{gap:13px}nav a{font-size:13px}.hero{min-height:auto;padding:58px 0 22px}.hero-logo-wrap{width:100%;aspect-ratio:1222/1140}.hero-content{margin-top:0}.hero-content p{font-size:16px}.hero-content p.phone{font-size:23px}.button{padding:11px 19px}}
 </style>
 </head>
 <body>
@@ -37,7 +38,7 @@ footer{background:#080808;color:#aaa;text-align:center;padding:25px;font-size:14
 </header>
 
 <section class="hero">
-<img class="hero-logo" src="ChatGPT Image Sep 9, 2026, 07_31_53 AM.png" alt="World Auto Sales logo">
+<div class="hero-logo-wrap"><img class="hero-logo" src="ChatGPT Image Sep 9, 2026, 07_31_53 AM.png" alt="World Auto Sales logo"></div>
 <div class="hero-content">
 <p>Quality Vehicles. Honest Service.</p>
 <p class="phone">618-575-0204</p>
