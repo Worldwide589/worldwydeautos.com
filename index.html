@@ -50,7 +50,7 @@ section:not(.hero){padding:65px 7%}.section-title{text-align:center;font-size:36
 .inventory{display:grid;grid-template-columns:minmax(0,780px);justify-content:center;gap:25px;max-width:1100px;margin:auto}
 .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,.12)}
 .card-image{height:190px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#666;font-size:18px}
-.card-content{padding:22px}.card h3{font-size:21px;margin-bottom:8px}.price{font-size:23px;font-weight:bold;color:#d71920}
+.card-content{padding:22px}.card h3{font-size:21px;margin-bottom:8px}.price{font-size:23px;font-weight:bold;color:#d71920}.sold-price{font-size:30px;font-weight:bold;color:#d71920;letter-spacing:2px}.sold-badge{display:inline-block;background:#d71920;color:#fff;font-weight:bold;font-size:20px;letter-spacing:2px;padding:9px 18px;margin:18px 22px 0;border-radius:4px}
 .about{background:#fff}.about-content{max-width:900px;margin:auto;text-align:center;font-size:18px}
 .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:40px}.feature{text-align:center;padding:25px}.feature h3{margin:12px 0 8px;font-size:21px}.feature-icon{font-size:42px}
 .cash-cars{background:#fff;text-align:center}.cash-cars .about-content{max-width:800px}.cash-cars h2{margin-bottom:20px}.cash-cars p{font-size:24px;font-weight:bold}
@@ -78,14 +78,15 @@ footer{background:#080808;color:#aaa;text-align:center;padding:25px;font-size:14
 
 <section id="inventory"><h2 class="section-title">Featured Vehicles</h2><div class="inventory">
 <div class="card">
+<div class="sold-badge">SOLD</div>
 <img src="pathfinder-front.jpg" loading="eager" decoding="async" fetchpriority="high" alt="2017 Nissan Pathfinder SL exterior" style="display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#151515">
 <div class="card-content">
 <h3>2017 Nissan Pathfinder SL</h3>
-<div class="price">$5,500</div>
+<div class="sold-price">SOLD</div>
 <p><strong>Clean title • No accidents • Well maintained</strong></p>
 <p>Runs and drives well. Features include leather seats, sunroof/moonroof, third-row seating, remote start, and heated/cooled seats.</p>
 <p style="margin-top:10px">Plus applicable tax, title, and license fees.</p>
-<p style="margin-top:12px"><a class="button" href="tel:6185750204">Call 618-575-0204</a></p>
+<p style="margin-top:12px"><strong>This vehicle has been sold. Thank you for your interest!</strong></p>
 </div>
 </div>
 </div></section>
